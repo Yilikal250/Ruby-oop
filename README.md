@@ -188,9 +188,9 @@ Example:
 
 👤 **Yilikal Teshome**
 
-- GitHub: [@githubhandle](https://github.com/Yilikal250)
-- Twitter: [@twitterhandle](https://twitter.com/TeshomeYilikal)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/yilikal-teshome)
+- GitHub: [@Yilikal250](https://github.com/Yilikal250)
+- Twitter: [@TeshomeYilikal](https://twitter.com/TeshomeYilikal)
+- LinkedIn: [yilikal-teshome](www.linkedin.com/in/yilikal-teshome)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -201,7 +201,7 @@ Example:
 > Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Create a class]**
-- [ ] **[Extends constructers]**
+- [ ] **[Extends constructors]**
 - [ ] **[Inherite classes]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
