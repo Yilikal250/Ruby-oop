@@ -1,23 +1,11 @@
-require_relative './person'
-require_relative './classroom'
-# Class: Student inherits from Person
+require './person'
 class Student < Person
-  # getter method
-  attr_reader :classroom
-
-  # initialize method adds a new instance variable @classroom
-
-  def initialize(*person, classroom)
-    super(*person)
+  def initialize(age, classroom, name = 'Unknown', parent_permission: true)
+    super(name, age, parent_permission)
     @classroom = classroom
   end
 
-  def classroom=(classroom)
-    @classroom = classroom
-    classroom.students << self unless classroom.students.include?(self)
-  end
-  # method to play
   def play_hooky
-    '¯\(ツ)/¯'
+    '¯(ツ)/¯'
   end
 end
