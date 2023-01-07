@@ -1,11 +1,8 @@
-require_relative './nameable'
-require_relative './capitalize_decorator'
-require_relative './trimmer_decorator'
-require_relative './rental'
+require './nameable'
+require './capitalize_decorator'
+require './trimmer_decorator'
 class Person < Nameable
   # initialize method
-  attr_accessor :name, :age
-  attr_reader :id, :rentals
 
   def initialize(age, name = 'Unknown', parent_permission: true)
     super()
@@ -13,17 +10,28 @@ class Person < Nameable
     @name = name
     @age = age
     @parent_permission = parent_permission
-    @rentals = []
+    @rental = []
   end
+  # getter method
+
+  attr_reader :id
+  attr_accessor :name, :age
+
+  # getter from relations
+  attr_accessor :rental, :classroom
 
   # Public methods
 
   def can_use_services?
-    of_age? || @parent_permission
+    is_of_age? || @parent_permission
   end
 
   def correct_name
     @name
+  end
+
+  def create_rental(date, book)
+    Rental.new(date, self, book)
   end
 
   # Private methods
